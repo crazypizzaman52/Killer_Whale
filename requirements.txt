@@ -1,2 +1,2 @@
-python-can
 pygame
+robotpy-ctre
