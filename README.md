@@ -1,14 +1,14 @@
 # Killer_Whale Motor Control
 
-This project demonstrates controlling a REV Spark MAX motor controller and a NEO 550 motor using a Raspberry Pi with a CAN HAT and an Xbox controller. It reads the integrated encoder and prints the position in degrees.
+This project demonstrates controlling a CTRE Talon SRX motor controller with a BAG motor and a Versa Planetary encoder using a Raspberry Pi with a CAN HAT and an Xbox controller. It reads the encoder position and prints it in degrees.
 
 ## Requirements
 - Python 3
 - RS485/CAN HAT configured as `can0`
 - An Xbox controller connected via USB or Bluetooth
-- REV Spark MAX and NEO 550 wired to the CAN bus
+- CTRE Talon SRX with BAG motor and Versa Planetary encoder wired to the CAN bus
 
-Install Python dependencies:
+Install Python dependencies (including RobotPy's CTRE bindings):
 
 ```bash
 pip install -r requirements.txt
