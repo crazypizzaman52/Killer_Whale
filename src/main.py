@@ -1,6 +1,7 @@
 import time
-from xbox_controller import XboxController
-from talonsrx_controller import TalonSRXController
+# Use package-relative imports so running as a module works
+from .xbox_controller import XboxController
+from .talonsrx_controller import TalonSRXController
 
 
 def main():
