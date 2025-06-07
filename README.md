@@ -8,10 +8,14 @@ This project demonstrates controlling a CTRE Talon SRX motor controller with a B
 - An Xbox controller connected via USB or Bluetooth
 - CTRE Talon SRX with BAG motor and Versa Planetary encoder wired to the CAN bus
 
-Install Python dependencies (including RobotPy's CTRE bindings):
+Install Python dependencies (including RobotPy's CTRE bindings). When running
+the program with `sudo`, the packages must be available for the root
+environment as well:
 
 ```bash
 pip install -r requirements.txt
+# or, if running the program with sudo
+sudo pip install -r requirements.txt
 ```
 
 ## Running

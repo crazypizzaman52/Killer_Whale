@@ -1,4 +1,9 @@
-import pygame
+try:
+    import pygame
+except ModuleNotFoundError as e:
+    raise ModuleNotFoundError(
+        "pygame is required for the Xbox controller. Install dependencies via 'pip install -r requirements.txt' (use sudo if necessary)."
+    ) from e
 
 class XboxController:
     def __init__(self):
