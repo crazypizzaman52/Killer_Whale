@@ -1,4 +1,9 @@
-import ctre
+try:
+    import ctre
+except ModuleNotFoundError as e:
+    raise ModuleNotFoundError(
+        "robotpy-ctre is required for the Talon SRX controller. Install dependencies via 'pip install -r requirements.txt' (use sudo if necessary)."
+    ) from e
 
 
 class TalonSRXController:
